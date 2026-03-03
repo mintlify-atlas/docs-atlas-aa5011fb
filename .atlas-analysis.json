@@ -1,0 +1,96 @@
+{
+  "projectType": "saas",
+  "projectName": "Frame",
+  "projectDescription": "A high-performance FFmpeg GUI for video and audio conversion built with Tauri and Svelte",
+  "theme": "palm",
+  "primaryColor": "#ff6b35",
+  "lightColor": "#ffa726",
+  "darkColor": "#d84315",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/video-conversion",
+              "features/audio-conversion",
+              "features/ai-upscaling",
+              "features/presets",
+              "features/batch-processing"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/hardware-acceleration",
+              "advanced/codecs",
+              "advanced/filters",
+              "advanced/performance"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/troubleshooting",
+              "support/faq",
+              "support/changelog"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "development/architecture",
+              "development/building",
+              "development/contributing"
+            ]
+          },
+          {
+            "group": "Technical Reference",
+            "pages": [
+              "development/rust-backend",
+              "development/frontend",
+              "development/ffmpeg-integration"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "FFmpeg-powered video and audio conversion with granular control",
+    "Hardware acceleration support (VideoToolbox, NVENC)",
+    "AI upscaling with Real-ESRGAN integration",
+    "Multi-language interface with automatic system detection",
+    "Concurrent task processing with real-time progress tracking",
+    "Preset management for reusable conversion profiles",
+    "Support for 10+ container formats and multiple codecs",
+    "Built with Tauri v2, Svelte 5, and Rust"
+  ],
+  "publicApiSurface": [
+    "queue_conversion",
+    "pause_conversion",
+    "resume_conversion",
+    "cancel_conversion",
+    "probe_media",
+    "get_max_concurrency",
+    "set_max_concurrency",
+    "get_available_encoders",
+    "open_native_file_dialog",
+    "ask_native_dialog"
+  ]
+}
